@@ -1,0 +1,243 @@
+
+/* ===== GENERAL STYLING ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #faf6f0;
+    color: #3d2b1f;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #3d2b1f;
+    color: #fff8ed;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar h1 {
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: #e6c28b;
+}
+
+.Links {
+    display: flex;
+    gap: 30px;
+}
+
+.Links a {
+    color: #fff8ed;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.Links a:hover {
+    color: #e6c28b;
+}
+
+/* ===== HERO SECTION ===== */
+.Hero {
+    min-height: 470px;
+    padding: 55px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    background: linear-gradient(120deg, #eee0cd, #fffaf3);
+}
+
+.Hero-text {
+    flex: 1;
+}
+
+.Hero-text h1 {
+    font-size: 48px;
+    letter-spacing: 4px;
+    color: #6b432b;
+    margin-bottom: 22px;
+}
+
+.Hero-text p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #655044;
+    margin-bottom: 25px;
+}
+
+.Hero img {
+    width: 43%;
+    max-width: 430px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(61, 43, 31, 0.16);
+}
+
+/* ===== SHOP NOW BUTTON ===== */
+.btn {
+    display: inline-block;
+    background-color: #795438;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #c49a63;
+    color: #2f2017;
+    transform: translateY(-3px);
+}
+
+/* ===== PRODUCT CARDS ===== */
+.Product {
+    display: inline-block;
+    vertical-align: top;
+    width: 26%;
+    margin: 3.5% 3.5% 1%;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border: 1px solid #eee1d0;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(61, 43, 31, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(61, 43, 31, 0.15);
+}
+
+.Product img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.Product h3 {
+    font-size: 18px;
+    color: #4a3324;
+    margin-bottom: 12px;
+}
+
+.Product p {
+    color: #987044;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* ===== BUY NOW BUTTON ===== */
+.Product button {
+    background-color: #3d2b1f;
+    color: #fff8ed;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Product button:hover {
+    background-color: #c49a63;
+    color: #2f2017;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    margin-top: 50px;
+    background-color: #3d2b1f;
+    color: #fff8ed;
+    text-align: center;
+    padding: 28px 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .Product {
+        width: 42%;
+        margin: 3.5% 3.5% 1%;
+    }
+
+    .Hero-text h1 {
+        font-size: 38px;
+    }
+
+    .Hero img {
+        width: 42%;
+        height: 280px;
+    }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 22px 15px;
+    }
+
+    .navbar h1 {
+        font-size: 25px;
+    }
+
+    .Links {
+        gap: 22px;
+    }
+
+    .Hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 20px;
+    }
+
+    .Hero-text h1 {
+        font-size: 34px;
+    }
+
+    .Hero-text p {
+        font-size: 15px;
+    }
+
+    .Hero img {
+        width: 100%;
+        max-width: 400px;
+        height: 270px;
+    }
+
+    .Product {
+        display: block;
+        width: 88%;
+        margin: 25px auto;
+    }
+
+    .Product img {
+        height: 250px;
+    }
+
+    .footer {
+        margin-top: 35px;
+    }
+}
